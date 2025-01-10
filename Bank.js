@@ -75,8 +75,7 @@ class Account {
             recipientAccount.balance += amount;
 
             // update sander transacion history
-            this.transactionHistory.push({transactionType:'transfer', amount: amount, 
-            to: recipientAccount.Name});
+            this.transactionHistory.push({ transactionType: 'Transfer', amount, to: recipientAccount.name })
 
     // update recipient transacion history
             recipientAccount.transactionHistory.push({
