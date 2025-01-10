@@ -46,14 +46,14 @@ class Account {
  // Example: deposit(Amount)
     deposit(Amount) {
        this.balance += Amount;
-       this.transactionHistory.push({ type:'deposit', amount: Amount});
+       this.transactionHistory.push({ transactontype:'Deposit', amount: Amount});
    
     }
 // Example: withdraw(amount)
     withdraw(amount) {
       if (amount <= this.balance) {
         this.balance -= amount;
-        this.transactionHistory.push({ type:'withdraw', amount: amount});
+        this.transactionHistory.push({ transactiontype:'Withdraw', amount: amount});
       } else {
         console.log('insufficient balance');
       } 
