@@ -79,7 +79,7 @@ class Account {
 
     // update recipient transacion history
             recipientAccount.transactionHistory.push({
-               transactionType: 'received',
+               transactionType: 'Received',
                amount: amount, from: this.name });
             } else {
                 console.log('insufficient funds for tranfer');
