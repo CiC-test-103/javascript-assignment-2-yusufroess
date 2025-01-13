@@ -46,7 +46,7 @@ class Account {
  // Example: deposit(Amount)
     deposit(Amount) {
        this.balance += Amount;
-       this.transactionHistory.push({ transactonType:'Deposit', amount: Amount});
+       this.transactionHistory.push({ transactsionType:'Deposit', amount: Amount});
    
     }
 // Example: withdraw(amount)
