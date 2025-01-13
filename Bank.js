@@ -46,14 +46,14 @@ class Account {
  // Example: deposit(Amount)
     deposit(Amount) {
        this.balance += Amount;
-       this.transactionHistory.push({ transactontype:'Deposit', amount: Amount});
+       this.transactionHistory.push({ Transactontype:'Deposit', amount: Amount});
    
     }
 // Example: withdraw(amount)
     withdraw(amount) {
       if (amount <= this.balance) {
         this.balance -= amount;
-        this.transactionHistory.push({ transactiontype:'Withdraw', amount: amount});
+        this.transactionHistory.push({ Transactiontype:'Withdraw', amount: amount});
       } else {
         console.log('insufficient balance');
       } 
@@ -75,7 +75,7 @@ class Account {
             recipientAccount.balance += amount;
 
             // update sander transacion history
-            this.transactionHistory.push({ transactionType: 'Transfer', amount, to: recipientAccount.name })
+            this.transactionHistory.push({ TransactionType: 'Transfer', amount, to: recipientAccount.name })
 
     // update recipient transacion history
             recipientAccount.transactionHistory.push({
